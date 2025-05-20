@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Senha</title>
+  <link rel="stylesheet" href="recuperar.css">
+</head>
+<body>
+  <div class="recuperar-container">
+    <h2>Recuperar Senha</h2>
+    <label for="token">Digite o token recebido por email:</label>
+    <input type="text" id="token">
+    <button onclick="verificarToken()">Verificar Token</button>
+
+    <div id="novaSenhaContainer" style="display:none">
+      <label for="nova-senha">Nova Senha:</label>
+      <div class="senha-container">
+        <input type="password" id="nova-senha">
+        <span class="toggle-senha" onclick="toggleSenha('nova-senha')">👁️</span>
+      </div>
+      <button onclick="salvarNovaSenha()">Salvar Nova Senha</button>
+    </div>
+
+    <a href="../login/login.html" class="login-button"> Voltar e Fazer Login</a>
+  </div>
+  <script src="../usuarios/usuario.js"></script>
+  <script type="module" src="recuperar.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css" />
+</head>
+<body>
+  <div class="cadastro-container">
+    <h2>Cadastro</h2>
+
+    <label for="cadastro-usuario">Usuário:</label>
+    <input type="text" id="cadastro-usuario" placeholder="Digite seu usuário" />
+
+    <label for="cadastro-email">Email:</label>
+    <input type="email" id="cadastro-email" placeholder="Digite seu email" />
+
+    <label for="cadastro-senha">Senha:</label>
+    <div class="senha-container">
+      <input type="password" id="cadastro-senha" placeholder="Digite sua senha" />
+      <span class="toggle-senha" id="toggle-senha">👁️</span>
+    </div>
+
+    <button id="btn-cadastrar">Cadastrar</button>
+    <a href="../login/login.html" class="login-button">Fazer Login</a>
+
+    <div id="message"></div>
+  </div>
+
+  <script type="module" src="cadastro.js"></script>
+</body>
+</html>
